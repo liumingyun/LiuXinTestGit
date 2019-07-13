@@ -1,3 +1,52 @@
-﻿我是柳新呀
+﻿基本操作
 
-我在这接着在写一行吧
+1.配置信息
+	git config --global user.name "lx"
+	git config --global user.email "lx.@qq.com"
+2.创建仓库
+	git init
+3.提交本地代码
+	添加一个文件:git add a.txt
+	添加一个文件夹:git add app
+	添加所有:gitadd .
+	提交:git commit -m "描述"
+
+操作进阶
+
+1.忽略文件
+	更改app目录下的gitignore文件:/build,/src/test,/src/androidTest
+2.查看修改内容
+	查看文件修改情况:git status
+	查看更改过的内容:git diff,git diff 目录
+3.撤销未提交的修改
+	git checkout 目录,未git add .撤销
+	git reset HEAD 目录,git add.过撤销
+	 
+4.查看提交记录
+	查看全部:git log
+	按照id查:git log id -1
+	按照id查全部:git log id -1 -p
+
+高级用法
+
+1.分支
+	查看全部分支:git branch
+	创建分支:git branch version1.0
+	切换分支:git branch version1.0
+	删除分支:git branch -D 版本
+	分支修改合并到主分支:git checkout 主分支 git merge 版本
+	
+2.同步到本地
+	git clone 链接,出现checking ...done
+3.添加到项目:
+	把平台下面中的所有内容 复制到主程序中  注意.git隐藏文件夹不能漏掉
+4.同步到远程版本库
+	git push origin mster
+5.远程版本库的修改同步到本地
+	fetch:git fetch origin master
+	同步后的代码放在origin/master分支中.通过git diff 分支查看改了哪些东西
+	调用merge把origin/master合并到分支,git merge origin/master
+	pull:把远程版本库获取最新的并且合并到本地 git pull origin master
+	
+	
+	
