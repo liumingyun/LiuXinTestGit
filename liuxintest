@@ -48,7 +48,7 @@
 	调用merge把origin/master合并到分支,git merge origin/master
 	pull:把远程版本库获取最新的并且合并到本地 git pull origin master
 	
-	
+今天我测试从远程分支拉代码	
 jbhdjfhsdjfhfdmflsdkffdsfjsdf
 	
 	
